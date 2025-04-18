@@ -686,3 +686,43 @@
 [2025-04-18T20:08:08.541+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:08:08.541+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-04-18T20:08:08.554+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:08:08.554+0000] {dag.py:3823} INFO - Setting next_dagrun for nasa_apod_postgres to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
 [2025-04-18T20:08:08.564+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl.py took 0.053 seconds
+[2025-04-18T20:08:38.788+0000] {processor.py:161} INFO - Started process (PID=416) to work on /opt/airflow/dags/etl.py
+[2025-04-18T20:08:38.788+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-04-18T20:08:38.789+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:08:38.789+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-04-18T20:08:38.803+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-04-18T20:08:38.807+0000] {processor.py:840} INFO - DAG(s) 'nasa_apod_postgres' retrieved from /opt/airflow/dags/etl.py
+[2025-04-18T20:08:38.821+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:08:38.821+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-04-18T20:08:38.834+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:08:38.834+0000] {dag.py:3823} INFO - Setting next_dagrun for nasa_apod_postgres to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T20:08:38.854+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl.py took 0.068 seconds
+[2025-04-18T20:09:09.033+0000] {processor.py:161} INFO - Started process (PID=421) to work on /opt/airflow/dags/etl.py
+[2025-04-18T20:09:09.034+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-04-18T20:09:09.035+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:09:09.034+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-04-18T20:09:09.048+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-04-18T20:09:09.052+0000] {processor.py:840} INFO - DAG(s) 'nasa_apod_postgres' retrieved from /opt/airflow/dags/etl.py
+[2025-04-18T20:09:09.066+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:09:09.066+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-04-18T20:09:09.079+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:09:09.079+0000] {dag.py:3823} INFO - Setting next_dagrun for nasa_apod_postgres to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T20:09:09.091+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl.py took 0.059 seconds
+[2025-04-18T20:09:39.259+0000] {processor.py:161} INFO - Started process (PID=426) to work on /opt/airflow/dags/etl.py
+[2025-04-18T20:09:39.260+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-04-18T20:09:39.261+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:09:39.260+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-04-18T20:09:39.275+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-04-18T20:09:39.279+0000] {processor.py:840} INFO - DAG(s) 'nasa_apod_postgres' retrieved from /opt/airflow/dags/etl.py
+[2025-04-18T20:09:39.294+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:09:39.294+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-04-18T20:09:39.307+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:09:39.307+0000] {dag.py:3823} INFO - Setting next_dagrun for nasa_apod_postgres to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T20:09:39.329+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl.py took 0.072 seconds
+[2025-04-18T20:10:09.508+0000] {processor.py:161} INFO - Started process (PID=431) to work on /opt/airflow/dags/etl.py
+[2025-04-18T20:10:09.509+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-04-18T20:10:09.509+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:10:09.509+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-04-18T20:10:09.523+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-04-18T20:10:09.527+0000] {processor.py:840} INFO - DAG(s) 'nasa_apod_postgres' retrieved from /opt/airflow/dags/etl.py
+[2025-04-18T20:10:09.544+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:10:09.544+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-04-18T20:10:09.558+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:10:09.557+0000] {dag.py:3823} INFO - Setting next_dagrun for nasa_apod_postgres to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T20:10:09.579+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl.py took 0.074 seconds
+[2025-04-18T20:10:39.763+0000] {processor.py:161} INFO - Started process (PID=436) to work on /opt/airflow/dags/etl.py
+[2025-04-18T20:10:39.764+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2025-04-18T20:10:39.765+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:10:39.765+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2025-04-18T20:10:39.779+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py:437 AirflowProviderDeprecationWarning: Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.
+[2025-04-18T20:10:39.784+0000] {processor.py:840} INFO - DAG(s) 'nasa_apod_postgres' retrieved from /opt/airflow/dags/etl.py
+[2025-04-18T20:10:39.798+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:10:39.798+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-04-18T20:10:39.811+0000] {logging_mixin.py:188} INFO - [2025-04-18T20:10:39.811+0000] {dag.py:3823} INFO - Setting next_dagrun for nasa_apod_postgres to 2025-04-18 00:00:00+00:00, run_after=2025-04-19 00:00:00+00:00
+[2025-04-18T20:10:39.830+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/etl.py took 0.069 seconds
