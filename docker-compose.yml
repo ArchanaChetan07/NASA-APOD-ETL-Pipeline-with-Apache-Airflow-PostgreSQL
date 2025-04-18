@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5433:5432"  # Changed port to avoid conflict
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - airflow_network
+
+  airflow-webserver:
+    image: apache/airflow:2.8.1
+    restart: always
+    depends_on:
+      - postgres
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://postgres:postgres@postgres:5432/postgres
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    volumes:
+      - .:/opt/airflow
+    ports:
+      - "8080:8080"
+    networks:
+      - airflow_network
+    command: webserver
+
+  airflow-scheduler:
+    image: apache/airflow:2.8.1
+    restart: always
+    depends_on:
+      - airflow-webserver
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://postgres:postgres@postgres:5432/postgres
+    volumes:
+      - .:/opt/airflow
+    networks:
+      - airflow_network
+    command: scheduler
+
+  airflow-init:
+    image: apache/airflow:2.8.1
+    restart: no
+    depends_on:
+      - postgres
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://postgres:postgres@postgres:5432/postgres
+    volumes:
+      - .:/opt/airflow
+    networks:
+      - airflow_network
+    command: bash -c "airflow db migrate && airflow users create --username admin --firstname admin --lastname user --role Admin --password admin --email admin@example.com"
+
+networks:
+  airflow_network:
+    external: false
+
+volumes:
+  postgres_data:
